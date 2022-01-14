@@ -17,7 +17,7 @@ Picture this: the app would support multiple "libraries", so you could use the a
 
 # Other Features
 I've had a number of ideas for this; I'll try to quickly list a bunch now, in no particular order.
-- playback of audio from multiple sources (Youtube, MP3, soundcloud, etc)
+- playback of audio from multiple sources (Youtube, FLAC/WAV/MP3, video MP4, soundcloud, etc)
 - karaoke-like lyric support (potentially using machine learning? at the very least, an interface for adding them in by hand)
 - syncing playlists, playback history, playback queue, etc between devices
 - listening parties?
