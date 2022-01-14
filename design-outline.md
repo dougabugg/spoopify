@@ -12,3 +12,14 @@ Some quick searching led me to a project called "funkwhale". It's more a federat
 
 # Ideas for the Android App
 Picture this: the app would support multiple "libraries", so you could use the app with a local library (just a folder with audio files), or connect to a "network library", which could be your other devices, or a public library exposed on the internet. This way, the app could be useful as a stand-alone music app, and also support all the syncing/streaming features if configured.
+
+
+
+# Other Features
+I've had a number of ideas for this; I'll try to quickly list a bunch now, in no particular order.
+- playback of audio from multiple sources (Youtube, MP3, soundcloud, etc)
+- karaoke-like lyric support (potentially using machine learning? at the very least, an interface for adding them in by hand)
+- syncing playlists, playback history, playback queue, etc between devices
+- listening parties?
+- ability to customize playback, per track, per playlist/queue (volume adjustment, equalizing, gap-less playback, etc.)
+- probably more to come, but I wanted to write these down now while I was thinking of them.
