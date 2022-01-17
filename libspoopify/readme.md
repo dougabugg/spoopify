@@ -1,6 +1,6 @@
 # Just some notes on the design
 
-I often run into a "mental block" and stop making projects on "abstract" projects like this. Sure, I could just go to any
+I often run into a "mental block" and stop making progress on "abstract" projects like this. Sure, I could just go to any
 old random music player app, and copy their "database layout", Artist-Album-Track, whatever, and be done with it. But
 when I program, my inner perfectionist comes out, and I feel like I can't move onto the next part of the implementation
 until I've "perfected" the current part, even though that's literally impossible, and I'll probably end up changing the
