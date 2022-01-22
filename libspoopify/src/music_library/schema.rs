@@ -1,10 +1,17 @@
 pub static CREATE_TABLES: &str = r#"
-CREATE TABLE audio_source(
+CREATE TABLE source_base(
     id              INTEGER PRIMARY KEY,
-    file            TEXT,
-    time_start      REAL,
-    time_end        REAL
+    protocol        TEXT,
+    host            TEXT,
+    path            TEXT
 );
+
+CREATE TABLE source(
+    id              INTEGER PRIMARY KEY,
+    base            INTEGER REFERENCES source_base,
+    path            TEXT
+);
+CREATE INDEX source.bases ON source(base);
 
 CREATE TABLE track(
     id              INTEGER PRIMARY KEY,
@@ -14,6 +21,18 @@ CREATE TABLE track(
     number          TEXT COLLATE NOCASE,
     artist          INTEGER REFERENCES group
 );
+CREATE INDEX track.albums ON track(album);
+CREATE INDEX track.artists ON track(artist);
+
+CREATE TABLE track_source(
+    track           INTEGER NOT NULL REFERENCES track,
+    source          INTEGER NOT NULL REFERENCES source,
+    priority        INTEGER,
+    time_start      REAL,
+    time_end        REAL
+);
+CREATE INDEX track_source.tracks ON track_source(track);
+CREATE INDEX track_source.sources ON track_source(source);
 
 CREATE TABLE track_tag(
     track           INTEGER NOT NULL REFERENCES track,
@@ -35,13 +54,14 @@ CREATE TABLE album(
     title           TEXT COLLATE NOCASE,
     artist          INTEGER REFERENCES group
 );
+CREATE INDEX album.artists ON album(artist);
 
 CREATE TABLE album_tag(
     album           INTEGER NOT NULL REFERENCES album,
     tag             INTEGER NOT NULL REFERENCES tag
 );
 CREATE INDEX album_tag.albums ON album_tag(album);
-CREATE INDEX album_tag.tag ON album_tag(tags);
+CREATE INDEX album_tag.tags ON album_tag(tag);
 
 CREATE TABLE group(
     id              INTEGER PRIMARY KEY,
@@ -53,7 +73,7 @@ CREATE TABLE group_tag(
     tag             INTEGER NOT NULL REFERENCES tag
 );
 CREATE INDEX group_tag.groups ON group_tag(group);
-CREATE INDEX group_tag.tag ON group_tag(tags);
+CREATE INDEX group_tag.tags ON group_tag(tag);
 
 CREATE TABLE group_member(
     group           INTEGER NOT NULL REFERENCES group,

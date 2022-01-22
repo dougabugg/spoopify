@@ -2,27 +2,40 @@ use std::marker::PhantomData;
 
 pub mod schema;
 
-pub type Key = u64;
+pub type Key = i64;
 
 pub struct ForiegnKey<T> {
     _pd: PhantomData<Box<T>>,
     id: Option<Key>,
 }
 
-pub struct AudioSource {
+pub struct SourceBase {
     id: Key,
-    file: String,
-    time_start: f64,
-    time_end: f64,
+    protocol: String,
+    host: String,
+    path: String,
+}
+
+pub struct Source {
+    id: Key,
+    base: ForiegnKey<SourceBase>,
+    path: String,
 }
 
 pub struct Track {
     id: Key,
     title: String,
-    source: ForiegnKey<AudioSource>,
     album: ForiegnKey<Album>,
     number: String,
     artist: ForiegnKey<Group>,
+}
+
+pub struct TrackSource {
+    track: ForiegnKey<Track>,
+    source: ForiegnKey<Source>,
+    priority: i64,
+    time_start: f64,
+    time_end: f64,
 }
 
 pub struct TrackTag {
