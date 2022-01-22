@@ -1,3 +1,24 @@
+use rusqlite::{params, Connection, Result};
+
+mod library;
+
+struct LocalDevice {
+    dbc: Connection,
+}
+
+impl LocalDevice {
+    fn open(dbc: Connection) -> Result<LocalDevice> {
+        // let mut stmt = dbc.prepare("SELECT * FROM libraries")?;
+
+        // stmt.query_map([], |row| {
+
+        // })?;
+        Ok(LocalDevice { dbc })
+    }
+}
+
+////
+mod _old {
 struct Library {
     tracks: Vec<AudioTrack>,
 }
@@ -41,6 +62,7 @@ enum PlaybackStream {
 }
 
 struct AudioFile {
-    hash: u64
+    hash: u64,
     path: String,
+}
 }

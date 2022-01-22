@@ -2,8 +2,18 @@
 name = "libspoopify"
 version = "0.1.0"
 edition = "2021"
+authors = ["Douglas Rezabek <drezabek@protonmail.com>"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+# crate-type = ["cdylib", "rlib"]
+crate-type = ["lib"]
+
 [dependencies]
-rusqlite = "0.26.3"
+# interoptopus = "0.13.12"
+# interoptopus_backend_csharp = "0.13.12"
+
+[dependencies.rusqlite]
+version = "0.26.3"
+features = ["bundled"]
