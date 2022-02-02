@@ -23,3 +23,6 @@ I've had a number of ideas for this; I'll try to quickly list a bunch now, in no
 - listening parties?
 - ability to customize playback, per track, per playlist/queue (volume adjustment, equalizing, gap-less playback, etc.)
 - probably more to come, but I wanted to write these down now while I was thinking of them.
+
+# Quick note on syncing
+I know I want to support syncing data between devices, but I think spoopify will have a semi-manual syncing process. I plan on eventually making a larger "syncing" app for things like notes, todo-lists, passwords, and timers/alarms/calendar events, and that will probably be its own app, but it would be cool if there was a way for the two projects and apps to "integrate" so truly automatic and secure syncing is supported.
