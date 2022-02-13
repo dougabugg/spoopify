@@ -23,3 +23,6 @@ I've had a number of ideas for this; I'll try to quickly list a bunch now, in no
 - listening parties?
 - ability to customize playback, per track, per playlist/queue (volume adjustment, equalizing, gap-less playback, etc.)
 - probably more to come, but I wanted to write these down now while I was thinking of them.
+
+# Mix Tapes
+I've read about how some people are nostalgic for the days of making "mix tapes" for their friends; I would like the provide a similar ability within this software project, without stepping on the RIAA's toes and getting shut down like napster or something. I like the idea of being able to create "mix tapes" that you can share to friends, or burn to a physical CD, for personal use, but not turning into a lime-wire like music piracy like haven.
