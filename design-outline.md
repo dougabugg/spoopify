@@ -26,3 +26,6 @@ I've had a number of ideas for this; I'll try to quickly list a bunch now, in no
 
 # Quick note on syncing
 I know I want to support syncing data between devices, but I think spoopify will have a semi-manual syncing process. I plan on eventually making a larger "syncing" app for things like notes, todo-lists, passwords, and timers/alarms/calendar events, and that will probably be its own app, but it would be cool if there was a way for the two projects and apps to "integrate" so truly automatic and secure syncing is supported.
+
+# Mix Tapes
+I've read about how some people are nostalgic for the days of making "mix tapes" for their friends; I would like the provide a similar ability within this software project, without stepping on the RIAA's toes and getting shut down like napster or something. I like the idea of being able to create "mix tapes" that you can share to friends, or burn to a physical CD, for personal use, but not turning into a lime-wire like music piracy like haven.
