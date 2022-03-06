@@ -33,7 +33,7 @@ pub struct Track {
 pub struct TrackSource {
     track: ForiegnKey<Track>,
     source: ForiegnKey<Source>,
-    priority: i64,
+    priority: i32,
     time_start: f64,
     time_end: f64,
 }
@@ -85,4 +85,19 @@ pub struct Tag {
     id: Key,
     category: ForiegnKey<TagCategory>,
     value: String,
+}
+
+pub struct Image {
+    id: Key,
+    source: ForiegnKey<Source>,
+    left: i32,
+    top: i32,
+    width: i32,
+    height: i32,
+}
+
+pub struct ImageTag {
+    image: ForiegnKey<Image>,
+    tag: ForiegnKey<Tag>,
+    priority: i32,
 }

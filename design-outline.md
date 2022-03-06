@@ -32,3 +32,8 @@ I've read about how some people are nostalgic for the days of making "mix tapes"
 
 # Mix Tapes 2
 I don't know why, but my best ideas come when it's 1am and I can't sleep lol. So "mix tapes", are the primary way of organizing your music library. you can organize them into folders, put custom cover art on them, and directly import albums as mix tapes, then customize them. You can add effects and adjustments, and keep them saved and stored in a central place. and it's all synced between devices, and you can share them with your friends.
+
+# ORM
+For the future
+https://crates.io/crates/sqlx#sqlx-is-not-an-orm
+https://crates.io/crates/diesel
