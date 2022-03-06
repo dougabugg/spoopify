@@ -29,3 +29,6 @@ I know I want to support syncing data between devices, but I think spoopify will
 
 # Mix Tapes
 I've read about how some people are nostalgic for the days of making "mix tapes" for their friends; I would like the provide a similar ability within this software project, without stepping on the RIAA's toes and getting shut down like napster or something. I like the idea of being able to create "mix tapes" that you can share to friends, or burn to a physical CD, for personal use, but not turning into a lime-wire like music piracy like haven.
+
+# Mix Tapes 2
+I don't know why, but my best ideas come when it's 1am and I can't sleep lol. So "mix tapes", are the primary way of organizing your music library. you can organize them into folders, put custom cover art on them, and directly import albums as mix tapes, then customize them. You can add effects and adjustments, and keep them saved and stored in a central place. and it's all synced between devices, and you can share them with your friends.
